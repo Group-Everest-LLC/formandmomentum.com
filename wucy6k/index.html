@@ -8,15 +8,13 @@
     <meta name="description" content="">
 
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <!-- Tracking Script (RT dinâmico) -->
+    
     <script>
         (function () {
-            var params = new URLSearchParams(window.location.search);
-            var rtkcmpid = params.get('rtkcmpid') || '';
             var domain = window.location.hostname.replace(/^www\./, '');
             var s = document.createElement('script');
             s.type = 'text/javascript';
-            s.src = 'https://lp.' + domain + '/pretrack.js' + (rtkcmpid ? '?rtkcmpid=' + rtkcmpid : '');
+            s.src = 'https://lp.' + domain + '/pretrack.js';
             document.head.appendChild(s);
         })();
     </script>
@@ -25,15 +23,11 @@
     <link href="css2.html" rel="stylesheet">
 
     <style>
-        /* =====================================================================
-   Pressel / Advertorial - news-portal style layout
-   HTML + CSS only (no scripts). Brand and copy are placeholders.
-   Accent color centralized in the --accent variable.
-   ===================================================================== */
+        
 
         :root {
             --accent: #FF503C;
-            /* brand color (replace with yours) */
+            
             --accent-2: #FF6B3D;
             --link: #2563eb;
         }
@@ -55,7 +49,7 @@
             max-width: 100%;
         }
 
-        /* --- HEADER --- */
+        
         .today-header-wrapper {
             position: sticky;
             top: 0;
@@ -162,12 +156,12 @@
             background: #2a2a2a;
         }
 
-        /* --- MOBILE NAV (hidden on desktop) --- */
+        
         .today-nav-mobile {
             display: none;
         }
 
-        /* --- BREAKING NEWS --- */
+        
         .breaking-news-banner {
             max-width: 1200px;
             margin: 0 auto;
@@ -197,7 +191,7 @@
             color: #2a2a2a;
         }
 
-        /* --- ARTICLE HEADER --- */
+        
         .article-header {
             max-width: 1200px;
             margin: 0 auto;
@@ -267,7 +261,7 @@
             color: #6b6b6b;
         }
 
-        /* --- CONTENT + SIDEBAR WRAPPER --- */
+        
         .content-with-sidebar {
             max-width: 1200px;
             margin: 0 auto;
@@ -311,7 +305,7 @@
             margin: 28px 0;
         }
 
-        /* --- INTERVIEW (image of the interview) --- */
+        
         .interview-section {
             margin: 28px 0;
         }
@@ -335,7 +329,7 @@
             color: #1a1a1a;
         }
 
-        /* --- CTA --- */
+        
         .cta-section {
             text-align: center;
             margin: 28px 0;
@@ -388,7 +382,7 @@
             }
         }
 
-        /* --- BLOCKQUOTE --- */
+        
         .article-blockquote {
             border-left: 4px solid var(--accent);
             margin: 24px 0;
@@ -400,7 +394,7 @@
             color: #555;
         }
 
-        /* --- SPONSORED STORIES --- */
+        
         .sponsored-section {
             margin: 30px 0;
         }
@@ -463,7 +457,7 @@
             color: #1a1a1a;
         }
 
-        /* --- COMMENTS (Facebook style) --- */
+        
         .comments-wrapper {
             margin-top: 36px;
         }
@@ -562,7 +556,7 @@
             margin: 8px 0 0;
         }
 
-        /* --- SIDEBAR --- */
+        
         .ads-sidebar {
             width: 200px;
             flex-shrink: 0;
@@ -603,7 +597,7 @@
             font-weight: 700;
         }
 
-        /* --- INFO BLOCKS (ingredients / disclaimer / references) --- */
+        
         .info-block {
             background: #f7f7f7;
             border: 1px solid #e5e5e5;
@@ -660,7 +654,7 @@
             text-decoration: underline;
         }
 
-        /* --- FOOTER --- */
+        
         .today-footer {
             padding: 40px 20px;
             background: #fafafa;
@@ -695,7 +689,7 @@
             color: #949494;
         }
 
-        /* ===================== RESPONSIVE ===================== */
+        
         @media (max-width: 768px) {
             .today-nav {
                 display: none;
@@ -820,27 +814,27 @@
 </head>
 
 <body class="advertorial">
-    <!-- === HEADER === -->
+    
     <div class="today-header-wrapper">
         <div class="today-header-inner">
             <div style="display: flex; align-items: center; overflow: hidden;">
-                <!-- ▼ YOUR BRAND HERE (logo/wordmark of your site) ▼ -->
-                <a class="today-logo" href="https://portal.fluidpulsenow.com/preclick">
+                
+                <a class="today-logo" href="#" data-cta>
                     <svg class="sunrise-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 32" fill="none">
-                        <!-- linha de batimento (vermelha) por trás, atravessa toda a largura -->
+                        
                         <path d="M2 19 H33 L35 11 L38 26 L41 15 L43 19 H58" stroke="#FF503C" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round"></path>
-                        <!-- coração -->
+                        
                         <path
                             d="M40 30 C34 24 28 19 28 14 C28 10 31 7 34.5 7 C37 7 39 8.5 40 10.5 C41 8.5 43 7 45.5 7 C49 7 52 10 52 14 C52 19 46 24 40 30 Z"
                             fill="#FF503C"></path>
-                        <!-- batimento em branco recortando o coração -->
+                        
                         <path d="M30 19 H33 L35 11 L38 26 L41 15 L43 19 H50" stroke="#ffffff" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                     <span class="brand-text">Wellness Route</span>
                 </a>
-                <!-- ▲ YOUR BRAND HERE ▲ -->
+                
 
                 <nav class="today-nav">
                     <p
@@ -894,7 +888,7 @@
         <span class="breaking-news-date">July. 18, 2026, 5:11 AM UTC</span>
     </div>
 
-    <!-- === ARTICLE HEADER === -->
+    
     <div class="article-header">
         <span class="article-category">HEALTH</span>
         <h1 class="article-title">Dr. Sanjay Gupta Defies Pfizer and Reveals How to Stabilize Blood Pressure in Just 7
@@ -913,7 +907,7 @@
         </div>
     </div>
 
-    <!-- === CONTEÚDO + SIDEBAR === -->
+    
     <div class="content-with-sidebar">
         <div class="content-main-col">
             <div class="today-article-content">
@@ -934,14 +928,14 @@
                     <p>The reason for the nationwide viral impact in less than 24 hours is how easily this trick can be
                         done.</p>
                     <p>You likely already have all the ingredients to make this recipe <b>today.</b></p>
-                    <p>So, if you are sick and tired of that chronic <b>“Lisinopril cough”</b>, feel overwhelming
-                        fatigue just climbing stairs, or live like a <b>”ticking time bomb”</b>, terrified of your next
+                    <p>So, if you are sick and tired of that chronic <b>"Lisinopril cough"</b>, feel overwhelming
+                        fatigue just climbing stairs, or live like a <b>"ticking time bomb"</b>, terrified of your next
                         reading…</p>
                     <p>…<b>you are definitely not alone</b>.</p>
 
-                    <!-- CTA (after lead) -->
+                    
                     <div class="cta-section">
-                        <a href="https://portal.fluidpulsenow.com/preclick" class="cta-link">Discover this
+                        <a href="#" data-cta class="cta-link">Discover this
                             3-ingredient natural method that stabilizes
                             your blood
                             pressure</a>
@@ -949,7 +943,7 @@
 
                     <hr>
 
-                    <!-- INTERVIEW (image of the interview) -->
+                    
                     <figure class="interview-section">
                         <figcaption><b class="speaker-name">Dr. Gupta:</b> This simple recipe helped my patients feel
                             back in control of their daily lives in just one week of daily use.</figcaption>
@@ -993,69 +987,69 @@
                     <p><b>Discover this simple home method and reclaim your independence—before this interview is taken
                             down.</b></p>
 
-                    <!-- CTA 1 -->
-                    <!-- ▼ Replace the href with your VSL link ▼ -->
+                    
+                    
                     <div class="cta-section">
-                        <a href="https://portal.fluidpulsenow.com/preclick" class="cta-link">Click the Link to
+                        <a href="#" data-cta class="cta-link">Click the Link to
                             Learn More!</a>
-                        <a href="https://portal.fluidpulsenow.com/preclick"
+                        <a href="#" data-cta
                             style="text-decoration:none; display:block;">
                             <img src="images/vsl.webp" alt="Watch the video">
                         </a>
                     </div>
 
-                    <!-- CTA 2 -->
+                    
                     <div class="cta-section">
-                        <a href="https://portal.fluidpulsenow.com/preclick" class="cta-button cta-button-watch">&gt;&gt;
+                        <a href="#" data-cta class="cta-button cta-button-watch">&gt;&gt;
                             Click to watch the video
                             &lt;&lt;</a>
                     </div>
 
-                    <!-- SPONSORED STORIES -->
+                    
                     <div class="sponsored-section">
                         <div class="sponsored-header">
                             <h3><i>Sponsored Stories</i></h3>
                             <span>by Taboola</span>
                         </div>
                         <div class="sponsored-grid">
-                            <a href="https://portal.fluidpulsenow.com/preclick" class="sponsored-item">
+                            <a href="#" data-cta class="sponsored-item">
                                 <img src="images/propaganda-a.webp" alt="">
                                 <p>This Household Staple Found in 9 Out of 10 Kitchens Is Now Tied to High Blood
                                     Pressure Risk.</p>
                             </a>
-                            <a href="https://portal.fluidpulsenow.com/preclick" class="sponsored-item">
+                            <a href="#" data-cta class="sponsored-item">
                                 <img src="images/propaganda-B.webp" alt="">
                                 <p>Cardiologists Identified the #1 Dietary Driver of Blood Pressure Spikes.</p>
                             </a>
-                            <a href="https://portal.fluidpulsenow.com/preclick" class="sponsored-item">
+                            <a href="#" data-cta class="sponsored-item">
                                 <img src="images/propaganda-c.webp" alt="">
                                 <p>Blood Pressure Spikes Have Been Directly Linked to a Beverage Most Americans Drink
                                     Before 9AM.</p>
                             </a>
-                            <a href="https://portal.fluidpulsenow.com/preclick" class="sponsored-item">
+                            <a href="#" data-cta class="sponsored-item">
                                 <img src="images/propaganda-d.webp" alt="">
                                 <p>The "Silent Killer" Has Been Tied to This Everyday Food — Do You Eat It Often?</p>
                             </a>
-                            <a href="https://portal.fluidpulsenow.com/preclick" class="sponsored-item">
+                            <a href="#" data-cta class="sponsored-item">
                                 <img src="images/propaganda-e.webp" alt="">
                                 <p>U.S. Cardiologists Now Call This Popular Morning Drink "A Ticking Time Bomb for Your
                                     Arteries" — Do You Drink It?</p>
                             </a>
-                            <a href="https://portal.fluidpulsenow.com/preclick" class="sponsored-item">
+                            <a href="#" data-cta class="sponsored-item">
                                 <img src="images/propaganda-f.webp" alt="">
                                 <p>Seniors: don't cut salt from your diet. You need to boost nitric oxide.</p>
                             </a>
-                            <a href="https://portal.fluidpulsenow.com/preclick" class="sponsored-item">
+                            <a href="#" data-cta class="sponsored-item">
                                 <img src="images/propaganda-g.webp" alt="">
                                 <p>The Aging Trap: How "Arterial Cement" Turns Flexible Blood Vessels into Stiff,
                                     High-Pressure Pipes.</p>
                             </a>
-                            <a href="https://portal.fluidpulsenow.com/preclick" class="sponsored-item">
+                            <a href="#" data-cta class="sponsored-item">
                                 <img src="images/propaganda-h.webp" alt="">
                                 <p>This Simple 3-Ingredient Morning Trick Helps Scrub Away Arterial Plaque and Reset
                                     Your Numbers.</p>
                             </a>
-                            <a href="https://portal.fluidpulsenow.com/preclick" class="sponsored-item">
+                            <a href="#" data-cta class="sponsored-item">
                                 <img src="images/propaganda-i.webp" alt="">
                                 <p>Doctors Stunned: 3-Ingredient Bedtime Ritual Directly Targets Clogged Plaques to
                                     Reverse Blood Pressure Stress</p>
@@ -1063,7 +1057,7 @@
                         </div>
                     </div>
 
-                    <!-- COMMENTS -->
+                    
                     <div class="comments-wrapper">
                         <div id="fb-comments">
                             <h2 class="fb-heading"><b>36,158 Comments</b></h2>
@@ -1143,38 +1137,38 @@
                             </div>
                         </div>
                     </div>
-                </div><!-- /article-body -->
-            </div><!-- /today-article-content -->
-        </div><!-- /content-main-col -->
+                </div>
+            </div>
+        </div>
 
-        <!-- SIDEBAR -->
+        
         <aside class="ads-sidebar">
             <div class="ad-unit">
-                <a href="https://portal.fluidpulsenow.com/preclick"><img src="images/propaganda-k.webp" alt=""></a>
-                <a href="https://portal.fluidpulsenow.com/preclick">
+                <a href="#" data-cta><img src="images/propaganda-k.webp" alt=""></a>
+                <a href="#" data-cta>
                     <div class="ad-headline">My Numbers Are Great, But I Feel Like Rubbish" — The Hidden Pill Trap 9 Out
                         of 10 Seniors Fall For.</div>
                 </a>
             </div>
             <div class="ad-unit">
-                <a href="https://portal.fluidpulsenow.com/preclick"><img src="images/propaganda-j.webp" alt=""></a>
-                <a href="https://portal.fluidpulsenow.com/preclick">
+                <a href="#" data-cta><img src="images/propaganda-j.webp" alt=""></a>
+                <a href="#" data-cta>
                     <div class="ad-headline">The Vicious "Cuff Loop": How Your At-Home Blood Pressure Monitor Is
                         Secretly Driving Your Readings Sky-High.</div>
                 </a>
             </div>
         </aside>
-    </div><!-- /content-with-sidebar -->
+    </div>
 
-    <!-- === FOOTER === -->
+    
     <div class="today-footer">
         <div class="today-footer-inner">
             <nav>
-                <a href="https://portal.fluidpulsenow.com/preclick">Terms
+                <a href="#" data-cta>Terms
                     & Conditions</a><span>|</span>
-                <a href="https://portal.fluidpulsenow.com/preclick">Privacy
+                <a href="#" data-cta>Privacy
                     Policy</a><span>|</span>
-                <a href="https://portal.fluidpulsenow.com/preclick">About</a>
+                <a href="#" data-cta>About</a>
             </nav>
         </div>
     </div>
@@ -1235,13 +1229,12 @@
             });
         }
 
-        // Dynamic Link Update — preserva params de URL
         (function () {
             const params = window.location.search;
             const currentDomain = window.location.hostname.replace(/^www\./, '');
             const dynamicUrl = `https://lp.${currentDomain}/preclick${params}`;
 
-            const links = document.querySelectorAll("a.cta-link, a.cta-button, a.sponsored-item, a.today-logo, .cta-section a, .ads-sidebar a");
+            const links = document.querySelectorAll("a[data-cta]");
             links.forEach(link => {
                 link.href = dynamicUrl;
             });
